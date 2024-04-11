@@ -4,7 +4,7 @@
 
 Склонируйте репозиторий командой
 ```shell
-git clone ...
+git clone https://github.com/Maria-Chekireva/salary_analysis.git
 ```
 
 Затем установите необходимые библиотеки
