@@ -56,5 +56,6 @@ def find_corr(salary_df, inflation_df):
         corr_df.loc[len(corr_df)] = [name, coef, np.mean(row)]
 
     corr_df.index = corr_df["Вид деятельности"]
+    corr_df.drop(columns=["Вид деятельности"], inplace=True)
 
     return corr_df.sort_values(by="Средний прирост за год", ascending=False)
