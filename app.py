@@ -104,8 +104,8 @@ def process_side_bar_inputs():
 def sidebar_input_features(salary_df):
     tp = st.sidebar.multiselect("Виды деятельности", tuple(salary_df.index)[1:])
 
-    start_year = st.sidebar.slider("Начало периода", min_value=2000, max_value=2023, value=2000, step=1)
-    end_year = st.sidebar.slider("Конец периода (включительно)", min_value=start_year, max_value=2023, value=2023, step=1)
+    start_year = st.sidebar.slider("Начало периода", min_value=2000, max_value=2022, value=2000, step=1)
+    end_year = st.sidebar.slider("Конец периода (включительно)", min_value=start_year + 1, max_value=2023, value=2023, step=1)
 
     data = {
         "tps": ["средняя"] + tp,
