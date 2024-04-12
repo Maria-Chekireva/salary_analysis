@@ -13,7 +13,7 @@ git clone https://github.com/Maria-Chekireva/salary_analysis.git
 
 Затем установите необходимые библиотеки
 ```shell
-pip install -r reqs.txt
+pip install -r requirements.txt
 ```
 
 Далее (опционально) запустите скрипт для скачивания файлов
